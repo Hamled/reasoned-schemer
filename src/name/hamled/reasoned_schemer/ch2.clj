@@ -14,3 +14,10 @@
       (fresh [x y]
              (== (llist x y) r)))
 ;; => ((_0 . _1))
+
+;; Frame 2:3
+(run* [r]
+      (fresh [v w]
+             (== (let [[x y] [v w]]
+                   (llist x y)) r)))
+;; => ((_0 . _1))
