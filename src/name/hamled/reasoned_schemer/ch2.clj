@@ -8,3 +8,9 @@
       y 'c]
   (x y))
 ;; => c
+
+;; Frame 2:2
+(run* [r]
+      (fresh [x y]
+             (== (llist x y) r)))
+;; => ((_0 . _1))
