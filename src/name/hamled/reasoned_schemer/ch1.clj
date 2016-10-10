@@ -179,3 +179,13 @@
         ((== 'oil x) s#)
         (:else u#)))
 ;; => (olive _0 oil)
+
+;; Frame 1:52
+(run 2 [x]
+      (conde
+        ((== 'extra x) s#)
+        ((== 'virgin x) u#)
+        ((== 'olive x) s#)
+        ((== 'oil x) s#)
+        (:else u#)))
+;; => (extra olive)
