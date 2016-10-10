@@ -153,3 +153,11 @@
   false true
   :else false)
 ;; => false
+
+;; Frame 1:47
+(run* [x]
+      (conde
+        ((== 'olive x) s#)
+        ((== 'oil x) s#)
+        (:else u#)))
+;; => (olive oil)
