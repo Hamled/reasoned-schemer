@@ -147,3 +147,9 @@
              (== x q)
              (== true x)))
 ;; => (true)
+
+;; Frame 1:41
+(cond
+  false true
+  :else false)
+;; => false
