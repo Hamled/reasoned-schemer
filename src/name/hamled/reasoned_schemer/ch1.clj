@@ -30,3 +30,9 @@
       s#
       (== 'corn r))
 ;; => (corn)
+
+;; Frame 1:17
+(run* [r]
+      u#
+      (== 'corn r))
+;; => ()
