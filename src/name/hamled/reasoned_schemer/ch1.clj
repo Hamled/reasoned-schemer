@@ -101,3 +101,11 @@
                (fresh [x]
                       (== (llist y x y) r)))))
 ;; => ((_0 _1 . _0))
+
+;; Frame 1:33
+(run* [r]
+      (fresh [x]
+             (let [y x]
+               (fresh [x]
+                      (== (llist x y x) r)))))
+;; => ((_0 _1 . _0))
