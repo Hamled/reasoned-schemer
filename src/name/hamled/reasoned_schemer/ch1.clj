@@ -24,3 +24,9 @@
       s#
       (== true q))
 ;; => (true)
+
+;; Frame 1:15
+(run* [r]
+      s#
+      (== 'corn r))
+;; => (corn)
