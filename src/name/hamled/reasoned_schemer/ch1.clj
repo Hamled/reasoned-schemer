@@ -55,3 +55,10 @@
         (== true x)
         (== true q)))
 ;; => (true)
+
+;; Frame 1:26
+(run* [q]
+      (fresh [x]
+        (== x true)
+        (== true q)))
+;; => (true)
