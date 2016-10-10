@@ -42,3 +42,9 @@
       s#
       (== false q))
 ;; => (false)
+
+;; Frame 1:22
+(run* [x]
+      (let [x false]
+        (== true x)))
+;; => ()
