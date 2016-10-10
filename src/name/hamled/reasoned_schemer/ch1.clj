@@ -121,3 +121,9 @@
       (== false q)
       (== false q))
 ;; => (false)
+
+;; Frame 1:36
+(run* [q]
+      (let [x q]
+        (== true x)))
+;; => (true)
