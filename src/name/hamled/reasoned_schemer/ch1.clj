@@ -115,3 +115,9 @@
       (== false q)
       (== true q))
 ;; => ()
+
+;; Frame 1:35
+(run* [q]
+      (== false q)
+      (== false q))
+;; => (false)
