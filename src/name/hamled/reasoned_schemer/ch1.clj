@@ -12,3 +12,9 @@
 (run* [q]
       (== true q))
 ;; => (true)
+
+;; Frame 1:12
+(run* [q]
+      u#
+      (== true q))
+;; => ()
