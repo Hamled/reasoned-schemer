@@ -81,3 +81,9 @@
         (fresh [x]
                (== true x))))
 ;; => (_0)
+
+;; Frame 1:30
+(run* [r]
+      (fresh [x y]
+            (== (llist x y) r)))
+;; => ((_0 . _1))
