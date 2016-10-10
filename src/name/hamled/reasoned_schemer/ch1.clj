@@ -48,3 +48,10 @@
       (let [x false]
         (== true x)))
 ;; => ()
+
+;; Frame 1:23
+(run* [q]
+      (fresh [x]
+        (== true x)
+        (== true q)))
+;; => (true)
