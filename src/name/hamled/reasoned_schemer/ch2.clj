@@ -21,3 +21,7 @@
              (== (let [[x y] [v w]]
                    (llist x y)) r)))
 ;; => ((_0 . _1))
+
+;; Frame 2:4
+(first '(grape rasin pear))
+;; => grape
