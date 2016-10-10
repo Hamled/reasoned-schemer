@@ -36,3 +36,9 @@
       u#
       (== 'corn r))
 ;; => ()
+
+;; Frame 1:18
+(run* [q]
+      s#
+      (== false q))
+;; => (false)
