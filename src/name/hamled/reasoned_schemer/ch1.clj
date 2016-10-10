@@ -133,3 +133,10 @@
       (fresh [x]
              (== x r)))
 ;; => (_0)
+
+;; Frame 1:38
+(run* [q]
+      (fresh [x]
+             (== true x)
+             (== x q)))
+;; => (true)
