@@ -18,3 +18,9 @@
       u#
       (== true q))
 ;; => ()
+
+;; Frame 1:13
+(run* [q]
+      s#
+      (== true q))
+;; => (true)
