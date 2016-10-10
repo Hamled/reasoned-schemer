@@ -93,3 +93,11 @@
       (fresh [t u]
             (== (llist t u) s)))
 ;; => ((_0 . _1))
+
+;; Frame 1:32
+(run* [r]
+      (fresh [x]
+             (let [y x]
+               (fresh [x]
+                      (== (llist y x y) r)))))
+;; => ((_0 _1 . _0))
