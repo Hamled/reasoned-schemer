@@ -7,3 +7,8 @@
 (run* [q]
       u#)
 ;; => ()
+
+;; Frame 1:11
+(run* [q]
+      (== true q))
+;; => (true)
