@@ -87,3 +87,9 @@
       (fresh [x y]
             (== (llist x y) r)))
 ;; => ((_0 . _1))
+
+;; Frame 1:31
+(run* [s]
+      (fresh [t u]
+            (== (llist t u) s)))
+;; => ((_0 . _1))
