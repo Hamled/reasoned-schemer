@@ -25,3 +25,7 @@
 ;; Frame 2:4
 (first '(grape rasin pear))
 ;; => grape
+
+;; Frame 2:5
+(first '(a c o r n))
+;; => a
