@@ -189,3 +189,11 @@
         ((== 'oil x) s#)
         (:else u#)))
 ;; => (extra olive)
+
+;; Frame 1:53
+(run* [r]
+      (fresh [x y]
+        (== 'split x)
+        (== 'pea y)
+        (== (llist x y) r)))
+;; => (split . pea)
