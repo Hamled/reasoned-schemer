@@ -127,3 +127,9 @@
       (let [x q]
         (== true x)))
 ;; => (true)
+
+;; Frame 1:37
+(run* [r]
+      (fresh [x]
+             (== x r)))
+;; => (_0)
