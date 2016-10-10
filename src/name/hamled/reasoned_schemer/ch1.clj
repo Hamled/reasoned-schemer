@@ -109,3 +109,9 @@
                (fresh [x]
                       (== (llist x y x) r)))))
 ;; => ((_0 _1 . _0))
+
+;; Frame 1:34
+(run* [q]
+      (== false q)
+      (== true q))
+;; => ()
