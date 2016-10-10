@@ -74,3 +74,10 @@
 (run* [x]
       s#)
 ;; => (_0)
+
+;; Frame 1:29
+(run* [x]
+      (let [x false]
+        (fresh [x]
+               (== true x))))
+;; => (_0)
