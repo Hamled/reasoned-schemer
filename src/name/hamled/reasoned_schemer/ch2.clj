@@ -76,3 +76,11 @@
   (rest '(grape raisin pear))
   (first '((a) (b) (c))))
 ;; => ((raisin pear) a)
+
+;; Frame 2:18
+(run* [r]
+      (fresh [x y]
+             (resto (llist 'grape 'raisin 'pear) x)
+             (firsto (llist '(a) '(b) '(c)) y)
+             (== (llist x y) r)))
+;; => (((raisin . pear) a))
