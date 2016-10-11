@@ -47,3 +47,11 @@
              (firsto (llist r y) x)
              (== 'pear x)))
 ;; => (pear)
+
+;; Frame 2:11
+(run* [r]
+      (fresh [x y]
+             (firsto (llist 'grape 'raisin 'pear) x)
+             (firsto (llist '(a) '(b) '(c)) y)
+             (== (llist x y) r)))
+;; => ((grape a))
