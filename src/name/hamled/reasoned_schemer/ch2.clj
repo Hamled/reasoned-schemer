@@ -72,7 +72,7 @@
 ;; => (c)
 
 ;; Frame 2:17
-(cons
+(llist
   (rest '(grape raisin pear))
   (first '((a) (b) (c))))
 ;; => ((raisin pear) a)
