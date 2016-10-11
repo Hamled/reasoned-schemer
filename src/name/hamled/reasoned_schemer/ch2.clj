@@ -90,3 +90,8 @@
       (resto (llist 'a 'c 'o 'r 'n) (llist 'c 'o 'r 'n))
       (== true q))
 ;; => (true)
+
+;; Frame 2:20
+(run* [x]
+      (resto (llist 'c 'o 'r 'n) (llist x 'r 'n)))
+;; => (o)
