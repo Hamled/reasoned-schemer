@@ -259,3 +259,10 @@
              (== false x)
              (== (llist y z) r)))
 ;; => ((false . _0) (_0 . false))
+
+;; Frame 1:60
+(run* [q]
+      (let [a (== true q)
+            b (== false q)]
+        b))
+;; => (false)
