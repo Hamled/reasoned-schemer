@@ -84,3 +84,9 @@
              (firsto (llist '(a) '(b) '(c)) y)
              (== (llist x y) r)))
 ;; => (((raisin . pear) a))
+
+;; Frame 2:19
+(run* [q]
+      (resto (llist 'a 'c 'o 'r 'n) (llist 'c 'o 'r 'n))
+      (== true q))
+;; => (true)
