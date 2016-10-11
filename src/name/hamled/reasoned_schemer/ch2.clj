@@ -40,3 +40,10 @@
       (firsto (llist 'a 'c 'o 'r 'n) 'a)
       (== true q))
 ;; => (true)
+
+;; Frame 2:8
+(run* [r]
+      (fresh [x y]
+             (firsto (llist r y) x)
+             (== 'pear x)))
+;; => (pear)
