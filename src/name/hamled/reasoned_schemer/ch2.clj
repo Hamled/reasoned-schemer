@@ -95,3 +95,11 @@
 (run* [x]
       (resto (llist 'c 'o 'r 'n) (llist x 'r 'n)))
 ;; => (o)
+
+;; Frame 2:21
+(run* [l]
+      (fresh [x]
+             (resto l (llist 'c 'o 'r 'n))
+             (firsto l x)
+             (== 'a x)))
+;; => ((a c o r . n))
