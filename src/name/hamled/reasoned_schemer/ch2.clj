@@ -59,3 +59,7 @@
 ;; Frame 2:13
 (rest '(grape raisin pear))
 ;; => (raisin pear)
+
+;; Frame 2:14
+(first (rest '(a c o r n)))
+;; => c
