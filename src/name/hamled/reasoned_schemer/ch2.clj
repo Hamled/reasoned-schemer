@@ -70,3 +70,9 @@
              (resto (llist 'a 'c 'o 'r 'n) v)
              (firsto v r)))
 ;; => (c)
+
+;; Frame 2:17
+(cons
+  (rest '(grape raisin pear))
+  (first '((a) (b) (c))))
+;; => ((raisin pear) a)
