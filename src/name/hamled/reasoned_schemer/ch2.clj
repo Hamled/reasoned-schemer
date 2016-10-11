@@ -103,3 +103,8 @@
              (firsto l x)
              (== 'a x)))
 ;; => ((a c o r . n))
+
+;; Frame 2:22
+(run* [l]
+      (conso (llist 'a 'b 'c) (llist 'd 'e) l))
+;; => (((a b . c) d . e))
