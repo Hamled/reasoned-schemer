@@ -266,3 +266,15 @@
             b (== false q)]
         b))
 ;; => (false)
+
+;; Frame 1:61
+(run* [q]
+      (let [a (== true q)
+            b (fresh [x]
+                     (== x q)
+                     (== false x))
+            c (conde
+                ((== true q) s#)
+                (:else (== false q)))]
+        b))
+;; => (false)
