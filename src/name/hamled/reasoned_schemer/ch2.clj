@@ -29,3 +29,8 @@
 ;; Frame 2:5
 (first '(a c o r n))
 ;; => a
+
+;; Frame 2:6
+(run* [r]
+      (firsto (llist 'a 'c 'o 'r 'n) r))
+;; => (a)
