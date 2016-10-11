@@ -228,3 +228,13 @@
 (run* [x]
       (teacupo x))
 ;; => (tea cup)
+
+;; Frame 1:57
+(run* [r]
+      (fresh [x y]
+             (conde
+               ((teacupo x) (== true y) s#)
+               ((== false x) (== true y))
+               (:else u#))
+             (== (llist x y) r)))
+;; => ((false . true) (tea . true) (cup . true))
