@@ -55,3 +55,7 @@
              (firsto (llist '(a) '(b) '(c)) y)
              (== (llist x y) r)))
 ;; => ((grape a))
+
+;; Frame 2:13
+(rest '(grape raisin pear))
+;; => (raisin pear)
