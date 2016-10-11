@@ -34,3 +34,9 @@
 (run* [r]
       (firsto (llist 'a 'c 'o 'r 'n) r))
 ;; => (a)
+
+;; Frame 2:7
+(run* [q]
+      (firsto (llist 'a 'c 'o 'r 'n) 'a)
+      (== true q))
+;; => (true)
