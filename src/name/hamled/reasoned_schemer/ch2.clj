@@ -63,3 +63,10 @@
 ;; Frame 2:14
 (first (rest '(a c o r n)))
 ;; => c
+
+;; Frame 2:15
+(run* [r]
+      (fresh [v]
+             (resto (llist 'a 'c 'o 'r 'n) v)
+             (firsto v r)))
+;; => (c)
