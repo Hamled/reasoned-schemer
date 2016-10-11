@@ -248,3 +248,14 @@
                (:else u#))
              (== (llist y z) r)))
 ;; => ((_0 . _1) (_0 . _1))
+
+;; Frame 1:59
+(run* [r]
+      (fresh [x y z]
+             (conde
+               ((== y x) (fresh [x] (== z x)))
+               ((fresh [x] (== y x)) (== z x))
+               (:else u#))
+             (== false x)
+             (== (llist y z) r)))
+;; => ((false . _0) (_0 . false))
