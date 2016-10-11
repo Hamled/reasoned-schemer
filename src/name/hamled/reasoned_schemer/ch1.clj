@@ -217,3 +217,14 @@
                (:else u#))
              (== (llist x y 'soup) r)))
 ;; => ((split pea . soup) (navy bean . soup))
+
+;; Frame 1:56
+(defn teacupo [x]
+  (conde
+    ((== 'tea x) s#)
+    ((== 'cup x) s#)
+    (:else u#)))
+
+(run* [x]
+      (teacupo x))
+;; => (tea cup)
