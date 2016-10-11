@@ -207,3 +207,13 @@
                (:else u#))
              (== (llist x y) r)))
 ;; => ((split . pea) (navy . bean))
+
+;; Frame 1:55
+(run* [r]
+      (fresh [x y]
+             (conde
+               ((== 'split x) (== 'pea y))
+               ((== 'navy x) (== 'bean y))
+               (:else u#))
+             (== (llist x y 'soup) r)))
+;; => ((split pea . soup) (navy bean . soup))
