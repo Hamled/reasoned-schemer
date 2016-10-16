@@ -202,3 +202,10 @@
       (eqo 'plum 'plum)
       (== true q))
 ;; => (true)
+
+;; Frame 2:43
+(defn pair? [x]
+  (or (lcons? x) (and (coll? x) (boolean (seq x)))))
+
+(pair? (llist '(split) 'pea))
+;; => true
