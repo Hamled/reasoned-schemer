@@ -108,3 +108,8 @@
 (run* [l]
       (conso (llist 'a 'b 'c) (llist 'd 'e) l))
 ;; => (((a b . c) d . e))
+
+;; Frame 2:23
+(run* [x]
+      (conso x (llist 'a 'b 'c) (llist 'd 'a 'b 'c)))
+;; => (d)
