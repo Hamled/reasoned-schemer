@@ -247,3 +247,9 @@
       (pairo '())
       (== true q))
 ;; => ()
+
+;; Frame 2:56
+(run* [q]
+      (pairo 'pair)
+      (== true q))
+;; => ()
