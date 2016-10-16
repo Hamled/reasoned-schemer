@@ -213,3 +213,7 @@
 ;; Frame 2:44
 (pair? '())
 ;; => false
+
+;; Frame 2:48
+(first '(pear))
+;; => pear
