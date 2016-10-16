@@ -120,3 +120,8 @@
              (== (llist 'e 'a 'd x) r)
              (conso y (llist 'a z 'c) r)))
 ;; => ((e a d . c))
+
+;; Frame 2:25
+(run* [x]
+      (conso x (llist 'a x 'c) (llist 'd 'a x 'c)))
+;; => (d)
