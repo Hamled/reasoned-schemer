@@ -209,3 +209,7 @@
 
 (pair? (llist '(split) 'pea))
 ;; => true
+
+;; Frame 2:44
+(pair? '())
+;; => false
