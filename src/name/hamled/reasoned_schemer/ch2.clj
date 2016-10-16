@@ -196,3 +196,9 @@
       (eqo 'pear 'plum)
       (== true q))
 ;; => ()
+
+;; Frame 2:39
+(run* [q]
+      (eqo 'plum 'plum)
+      (== true q))
+;; => (true)
