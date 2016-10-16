@@ -165,3 +165,9 @@
       (emptyo '(grape raisin pear))
       (== true q))
 ;; => ()
+
+;; Frame 2:33
+(run* [q]
+      (emptyo '())
+      (== true q))
+;; => (true)
