@@ -231,3 +231,13 @@
       (fresh [x y]
              (== (llist x y 'salad) r)))
 ;; => ((_0 _1 . salad))
+
+;; Frame 2:54
+(defn pairo [p]
+  (fresh [a d]
+         (conso a d p)))
+
+(run* [q]
+      (pairo (lcons q q))
+      (== true q))
+;; => (true)
