@@ -155,3 +155,7 @@
 ;; Frame 2:30
 (empty? '(grape raisin pear))
 ;; => false
+
+;; Frame 2:31
+(empty? '())
+;; => true
