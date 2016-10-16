@@ -221,3 +221,7 @@
 ;; Frame 2:49
 (rest '(pear))
 ;; => ()
+
+;; Frame 2:51
+(lcons '(split) 'pea)
+;; => ((split) . pea)
