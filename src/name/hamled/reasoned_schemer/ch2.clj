@@ -258,3 +258,8 @@
 (run* [x]
       (pairo x))
 ;; => ((_0 . _1))
+
+;; Frame 2:58
+(run* [r]
+      (pairo (lcons r 'pear)))
+;; => (_0)
