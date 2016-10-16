@@ -253,3 +253,8 @@
       (pairo 'pair)
       (== true q))
 ;; => ()
+
+;; Frame 2:57
+(run* [x]
+      (pairo x))
+;; => ((_0 . _1))
