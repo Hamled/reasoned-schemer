@@ -151,3 +151,7 @@
              (firsto d y)
              (== 'e y)))
 ;; => ((b e a n . s))
+
+;; Frame 2:30
+(empty? '(grape raisin pear))
+;; => false
