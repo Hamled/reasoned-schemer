@@ -139,3 +139,15 @@
              (conso x (llist 'a x 'c) l)
              (== (llist 'd 'a x 'c) l)))
 ;; => ((d a d . c))
+
+;; Frame 2:29
+(run* [l]
+      (fresh [d x y w s]
+             (conso w (llist 'a 'n 's) s)
+             (resto l s)
+             (firsto l x)
+             (== 'b x)
+             (resto l d)
+             (firsto d y)
+             (== 'e y)))
+;; => ((b e a n . s))
