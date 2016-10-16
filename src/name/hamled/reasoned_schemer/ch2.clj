@@ -187,3 +187,12 @@
 ;; Frame 2:37
 (eq 'plum 'plum)
 ;; => true
+
+;; Frame 2:38
+(defn eqo [x y]
+  (== x y))
+
+(run* [q]
+      (eqo 'pear 'plum)
+      (== true q))
+;; => ()
