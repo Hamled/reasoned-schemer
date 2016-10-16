@@ -217,3 +217,7 @@
 ;; Frame 2:48
 (first '(pear))
 ;; => pear
+
+;; Frame 2:49
+(rest '(pear))
+;; => ()
