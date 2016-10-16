@@ -183,3 +183,7 @@
 
 (eq 'pear 'plum)
 ;; => false
+
+;; Frame 2:37
+(eq 'plum 'plum)
+;; => true
