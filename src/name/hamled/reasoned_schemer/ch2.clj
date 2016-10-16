@@ -241,3 +241,9 @@
       (pairo (lcons q q))
       (== true q))
 ;; => (true)
+
+;; Frame 2:55
+(run* [q]
+      (pairo '())
+      (== true q))
+;; => ()
