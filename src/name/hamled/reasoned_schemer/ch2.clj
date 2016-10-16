@@ -159,3 +159,9 @@
 ;; Frame 2:31
 (empty? '())
 ;; => true
+
+;; Frame 2:32
+(run* [q]
+      (emptyo '(grape raisin pear))
+      (== true q))
+;; => ()
