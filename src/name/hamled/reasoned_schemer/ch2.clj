@@ -225,3 +225,9 @@
 ;; Frame 2:51
 (lcons '(split) 'pea)
 ;; => ((split) . pea)
+
+;; Frame 2:52
+(run* [r]
+      (fresh [x y]
+             (== (llist x y 'salad) r)))
+;; => ((_0 _1 . salad))
