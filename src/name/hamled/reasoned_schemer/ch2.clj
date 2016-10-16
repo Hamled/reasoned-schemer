@@ -171,3 +171,8 @@
       (emptyo '())
       (== true q))
 ;; => (true)
+
+;; Frame 2:34
+(run* [x]
+      (emptyo x))
+;; => (())
