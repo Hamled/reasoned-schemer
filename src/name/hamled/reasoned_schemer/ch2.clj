@@ -132,3 +132,10 @@
              (== (llist 'd 'a x 'c) l)
              (conso x (llist 'a x 'c) l)))
 ;; => ((d a d . c))
+
+;; Frame 2:27
+(run* [l]
+      (fresh [x]
+             (conso x (llist 'a x 'c) l)
+             (== (llist 'd 'a x 'c) l)))
+;; => ((d a d . c))
