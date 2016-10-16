@@ -176,3 +176,10 @@
 (run* [x]
       (emptyo x))
 ;; => (())
+
+;; Frame 2:36
+(defn eq [x y]
+  (= x y))
+
+(eq 'pear 'plum)
+;; => false
